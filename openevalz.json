@@ -1,0 +1,50 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "mmiu",
+    "slug": "mmiu",
+    "title": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+    "group": "Multimodal",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/mmiu",
+    "inspect_ai": "0.3.260",
+    "eval_version": "2-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "medium",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "mmiu",
+      "samples": 11698
+    }
+  ],
+  "total_samples": 11698,
+  "external_assets": [
+    {
+      "type": "direct_url",
+      "source": "https://huggingface.co/datasets/FanqingM/MMIU-Benchmark/resolve/{SHA}/{file}.zip",
+      "state": "pinned"
+    },
+    {
+      "type": "huggingface",
+      "source": "FanqingM/MMIU-Benchmark",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
